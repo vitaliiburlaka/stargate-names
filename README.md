@@ -1,12 +1,27 @@
-<div align="center">
-  <h1>stargate-names</h1>
-</div>
+# stargate-names
+
+Get random names from Star Wars characters.
 
 [![Build Status][build-badge]][build]
 [![Code Coverage][coverage-badge]][coverage]
 [![version][version-badge]][package]
 [![downloads][downloads-badge]][npmcharts]
 [![MIT License][license-badge]][license]
+
+## Installation
+
+```
+npm install stargate-names
+```
+
+## Usage
+
+```javascript
+const sgNames = require('stargate-names')
+const allNames = names.all
+const randomName = names.random()
+const threeRandomNames = names.random(3)
+```
 
 [build-badge]: https://img.shields.io/travis/vitaliiburlaka/stargate-names.svg
 [build]: https://travis-ci.org/vitaliiburlaka/stargate-names
