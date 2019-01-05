@@ -29,10 +29,16 @@
   "devDependencies": {
     "commitizen": "3.0.5",
     "cz-conventional-changelog": "2.1.0",
+    "husky": "1.3.1",
     "jest": "23.6.0",
     "semantic-release": "^15.13.2"
   },
   "czConfig": {
     "path": "node_modules/cz-conventional-changelog"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run test"
+    }
   }
 }
