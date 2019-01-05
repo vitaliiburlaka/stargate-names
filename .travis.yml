@@ -22,7 +22,7 @@ install:
 script:
   - npm run test:cover
 
-after_success: npm run codecov
+after_success: npx codecov
 
 jobs:
   include:
