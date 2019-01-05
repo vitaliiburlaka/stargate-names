@@ -1,14 +1,16 @@
 {
   "name": "stargate-names",
-  "version": "1.0.0",
+  "version": "0.0.0-development",
   "description": "Get random Stargate names",
   "main": "src/index.js",
   "scripts": {
-    "test": "jest ./src --watch"
+    "commit": "git-cz",
+    "test": "jest ./src",
+    "semantic-release": "semantic-release"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/vitaliiburlaka/stargate-names.git"
+    "url": "https://github.com/vitaliiburlaka/stargate-names.git"
   },
   "keywords": [
     "random",
@@ -25,6 +27,12 @@
     "unique-random-array": "1.0.1"
   },
   "devDependencies": {
-    "jest": "23.6.0"
+    "commitizen": "3.0.5",
+    "cz-conventional-changelog": "2.1.0",
+    "jest": "23.6.0",
+    "semantic-release": "^15.13.2"
+  },
+  "czConfig": {
+    "path": "node_modules/cz-conventional-changelog"
   }
 }
