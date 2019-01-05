@@ -10,7 +10,6 @@ notifications:
   email: false
 
 node_js:
-  - 10
   - 8
 
 branches:
@@ -21,7 +20,9 @@ install:
   - travis_retry npm install
 
 script:
-  - npm run test
+  - npm run test:cover
+
+after_success: npm run codecov
 
 jobs:
   include:
