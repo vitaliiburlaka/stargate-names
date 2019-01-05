@@ -6,10 +6,10 @@ cache:
   directories:
     - node_modules
 
-    notifications:
+notifications:
   email: false
 
-  node_js:
+node_js:
   - 10
   - 8
 
@@ -20,7 +20,7 @@ branches:
 install:
   - travis_retry npm install
 
-  script:
+script:
   - npm run test
 
 jobs:
