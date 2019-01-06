@@ -1,13 +1,15 @@
-var uniqueRandomArray = require('unique-random-array')
-var stargateNames = require('./stargate-names.json')
-var getRandomItem = uniqueRandomArray(stargateNames)
+import uniqueRandomArray from 'unique-random-array'
+
+import stargateNames from './stargate-names.json'
+
+const getRandomItem = uniqueRandomArray(stargateNames)
 
 function random(number) {
   if (number === undefined) {
     return getRandomItem()
   } else {
-    var randomItems = []
-    for (var i = 0; i < number; i++) {
+    const randomItems = []
+    for (let i = 0; i < number; i++) {
       randomItems.push(getRandomItem())
     }
 
@@ -15,7 +17,7 @@ function random(number) {
   }
 }
 
-module.exports = {
+export default {
   all: stargateNames,
   random: random
 }

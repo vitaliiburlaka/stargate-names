@@ -16,11 +16,15 @@ npm install stargate-names
 
 ## Usage
 
-```javascript
+```js
+// Node.js CommonJS
 const sgNames = require('stargate-names')
-const allNames = names.all
-const randomName = names.random()
-const threeRandomNames = names.random(3)
+// ES module
+import sgNames from 'stargate-names'
+
+const allNames = sgNames.all
+const randomName = sgNames.random()
+const threeRandomNames = sgNames.random(3)
 ```
 
 [build-badge]: https://img.shields.io/travis/vitaliiburlaka/stargate-names.svg
