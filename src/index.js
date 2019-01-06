@@ -19,5 +19,5 @@ function random(number) {
 
 export default {
   all: stargateNames,
-  random: random
+  random: random,
 }

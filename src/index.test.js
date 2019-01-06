@@ -10,8 +10,8 @@ describe('stargate-names', () => {
       expect(isArrayOfStrings(stargateNames.all)).toEqual(true)
     })
 
-    it('should contain `Teal\'c`', () => {
-      expect(stargateNames.all).toContain('Teal\'c')
+    it(`should contain 'Teal'c'`, () => {
+      expect(stargateNames.all).toContain(`Teal'c`)
     })
   })
 
