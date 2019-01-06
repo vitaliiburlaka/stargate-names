@@ -1,6 +1,6 @@
 # stargate-names
 
-Get random names from Star Wars characters.
+Get random names from Stargate characters.
 
 [![Build Status][build-badge]][build]
 [![Code Coverage][coverage-badge]][coverage]
