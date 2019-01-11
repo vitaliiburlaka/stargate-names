@@ -1,6 +1,6 @@
-import uniqueRandomArray from 'unique-random-array'
+const uniqueRandomArray = require('unique-random-array')
 
-import stargateNames from './stargate-names.json'
+const stargateNames = require('./stargate-names.json')
 
 const getRandomItem = uniqueRandomArray(stargateNames)
 
@@ -17,7 +17,7 @@ function random(number) {
   }
 }
 
-export default {
+module.exports = {
   all: stargateNames,
   random: random,
 }

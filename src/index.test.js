@@ -1,4 +1,4 @@
-import stargateNames from './index'
+const stargateNames = require('./index')
 
 describe('stargate-names', () => {
   function isArrayOfStrings(array) {

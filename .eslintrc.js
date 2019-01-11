@@ -9,13 +9,12 @@ module.exports = {
     },
   },
   env: {
-    commonjs: true,
     es6: true,
     node: true,
     jest: true,
   },
-  extends: ['eslint:recommended', 'prettier'],
-  plugins: ['prettier'],
+  extends: ['eslint:recommended', 'plugin:node/recommended', 'prettier'],
+  plugins: ['node', 'prettier'],
   rules: {
     'prettier/prettier': 2,
 
